@@ -3,10 +3,14 @@
 </script>
 
 <style>
+.window{
+  width: 320px;
+  height: 150px;
+}
 
 </style>
 
-<div>
+<div class="window">
 
 </div>
 
