@@ -6,6 +6,7 @@
 .window{
   width: 320px;
   height: 150px;
+  background: white;
 }
 
 </style>
