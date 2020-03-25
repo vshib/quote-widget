@@ -1,6 +1,6 @@
 <script>
   function hover() {
-    console.log('focus')
+    console.log('hover')
   }
   function nextQuote() {
     console.log('next')
