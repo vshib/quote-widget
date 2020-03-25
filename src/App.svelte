@@ -1,6 +1,9 @@
 <script>
-  function hover(){
+  function hover() {
     console.log('focus')
+  }
+  function nextQuote() {
+    console.log('next')
   }
 </script>
 
@@ -11,10 +14,9 @@
     background: white;
     color: black;
   }
-  .window:hover{
+  .window:hover {
     background: yellow;
   }
-
 </style>
 
-<div class="window" on:mouseover={hover} />
+<div class="window" on:mouseover={hover} on:click={nextQuote} />
