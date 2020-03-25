@@ -7,6 +7,7 @@
   width: 320px;
   height: 150px;
   background: white;
+  color: black;
 }
 
 </style>
