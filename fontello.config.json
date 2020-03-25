@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "661bd5ba1dad15ad9acbfcd8b8af76f3",
+      "css": "quote-left",
+      "code": 59393,
+      "src": "iconic"
+    },
+    {
+      "uid": "bc0af4824c8eedcad7bc0d35911dac2a",
+      "css": "quote-right",
+      "code": 59394,
+      "src": "iconic"
+    },
+    {
+      "uid": "3bd18d47a12b8709e9f4fe9ead4f7518",
+      "css": "arrows-ccw",
+      "code": 59395,
+      "src": "entypo"
+    }
+  ]
+}
