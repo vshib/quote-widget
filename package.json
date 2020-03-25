@@ -1,5 +1,9 @@
 {
   "name": "svelte-widget",
+  "author": {
+    "name": "Vladimir Shibnev",
+    "email": "vlad.shibnev@gmail.com"
+  },
   "version": "0.0.1",
   "devDependencies": {
     "@pyoner/svelte-ts-preprocess": "^1.2.1",
