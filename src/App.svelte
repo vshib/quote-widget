@@ -1,21 +1,20 @@
 <script>
-  import Spinner from 'svelte-spinner'
+  function hover(){
+    console.log('focus')
+  }
 </script>
 
 <style>
-.window{
-  width: 320px;
-  height: 150px;
-  background: white;
-  color: black;
-}
+  .window {
+    width: 320px;
+    height: 150px;
+    background: white;
+    color: black;
+  }
+  .window:hover{
+    background: yellow;
+  }
 
 </style>
 
-<div class="window">
-
-</div>
-
- 
- 
- 
+<div class="window" on:mouseover={hover} />
