@@ -1,19 +1,29 @@
 <script>
+  import { onMount } from 'svelte'
+
+  let currentQuote = ''
+
+  let quotes = [
+    'Quote 1',
+    'Some quote 1',
+    'Quote 2',
+    'Some quote 2',
+    'Some quote 3',
+    'Some quote 4',
+    'Some quote 5',
+    'Some quote 6',
+  ]
+
   function hover() {
     console.log('hover')
   }
 
   function nextQuote() {
-    console.log('next')
+    currentQuote = getQuote()
   }
 
-  let quotes = [
-    'Вы пробовали выключить и снова включить?',
-    'Романтический ужин при свичах в компании соблазнительных цисок.',
-  ]
-
   function getQuote() {
-    const randomNumber = getRandomIntInclusive(0, quotes.length)
+    const randomNumber = getRandomIntInclusive(0, quotes.length - 1)
     const randomQuote = quotes[randomNumber]
     return randomQuote
   }
@@ -23,6 +33,8 @@
     max = Math.floor(max)
     return Math.floor(Math.random() * (max - min + 1)) + min
   }
+
+  onMount(nextQuote)
 </script>
 
 <style>
@@ -37,4 +49,4 @@
   }
 </style>
 
-<div class="window" on:mouseover={hover} on:click={nextQuote} />
+<div class="window" on:mouseover={hover} on:click={nextQuote}>{currentQuote}</div>
