@@ -2,6 +2,7 @@
   import { onMount } from 'svelte'
 
   let currentQuote = ''
+  let toolBlockEnabled = false
 
   let quotes = [
     'Написал код на бумажке. Отладил в голове.',
@@ -54,7 +55,7 @@
   }
 
   .quote-text {
-    padding: 0 35px;
+    padding: 0 45px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -86,19 +87,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-bottom: 15px;
     align-items: center;
-    padding-left: 30px;
     font-size: 17px;
+  }
+
+  .quote-tool-block {
+    position: absolute;
   }
 </style>
 
-<div class="window">
+<div
+  on:mouseleave={() => {
+    toolBlockEnabled = false
+  }}
+  on:mouseenter={() => {
+    toolBlockEnabled = true
+  }}
+  class="window">
 
   <div class="icon-quote-left" />
   <div class="quote-text">{currentQuote}</div>
   <div class="icon-quote-right" />
 
-  <div on:click={nextQuote} class="icon-arrows-ccw" />
-
+  {#if toolBlockEnabled}
+    <div class="quote-tool-block">
+      <div on:click={nextQuote} class="icon-arrows-ccw" />
+    </div>
+  {/if}
 </div>
