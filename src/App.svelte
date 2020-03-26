@@ -44,12 +44,13 @@
     font-size: 17px;
     border-radius: 4px;
     cursor: pointer;
-
     justify-content: center;
     align-items: center;
-
     flex-wrap: wrap;
     display: flex;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
   }
 
   .quote-text {
