@@ -4,14 +4,12 @@
   let currentQuote = ''
 
   let quotes = [
-    'Imagination is the one weapon in the war against reality.',
-    'Some quote 1',
-    'Quote 2',
-    'Some quote 2',
-    'Some quote 3',
-    'Some quote 4',
-    'Some quote 5',
-    'Some quote 6',
+    'Написал код на бумажке. Отладил в голове.',
+    'Почистил дорожку от снега. Повысил пропускную способность.',
+    'Попросили исправить чужой код. сtrl+A; delete; пишу программу.',
+    'Девушка сказала 100000 раз написать "Прости". for i:=1 to 100000 do writeln("Прости").',
+    'Удобный интерфейс? Главное, что работает.',
+    'Завел кошку, еще не придумал, как назвать. Пока обращаюсь к ней по айпишнику.',
   ]
 
   function nextQuote() {
@@ -86,9 +84,11 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     padding-bottom: 15px;
     align-items: center;
+    padding-left: 30px;
+    font-size: 17px;
   }
 </style>
 
