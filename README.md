@@ -1,10 +1,8 @@
-[![npm][npm]][npm-url]
+Svelte. Quote widget.
 
-Svelte. Item list.
+## Demo screenshot
 
-## Screenshot
-
-![Preview](https://raw.githubusercontent.com/vshib/quote-widget/master/assets/img/preview.png 'Preview')
+![Preview](https://raw.githubusercontent.com/vshib/quote-widget/master/public/assets/img/preview.png 'Preview')
 
 ## Dev
 
