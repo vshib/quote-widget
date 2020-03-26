@@ -38,7 +38,7 @@
   }
   .window {
     width: 320px;
-    height: 150px;
+    min-height: 150px;
     background: white;
     color: black;
     border: 1px solid black;
