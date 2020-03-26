@@ -33,15 +33,11 @@
 </script>
 
 <style>
-  :global(body) {
-    background: #2b2a29;
-  }
-  .window {
+  .quote-container {
     width: 320px;
     min-height: 150px;
     background: white;
     color: black;
-    border: 1px solid black;
     font-size: 17px;
     border-radius: 4px;
     cursor: pointer;
@@ -54,45 +50,35 @@
     line-height: 1.75;
   }
 
-  .quote-text {
+  .quote-container .quote-data .quote-text {
     padding: 0 45px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
   }
-  .icon-quote-left {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
+  .quote-container .quote-data .icon-quote-left {
     justify-content: flex-start;
-    align-items: center;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px 15px 0px 15px;
   }
-  .icon-quote-right {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
+  .quote-container .quote-data .icon-quote-right {
     justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0px 15px 15px 15px;
   }
 
-  .icon-arrows-ccw {
+  .quote-container .quote-tool .icon-arrows-ccw {
     color: #04a49c;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
-    font-size: 17px;
   }
 
-  .quote-tool-block {
+  .quote-container .quote-tool {
     position: absolute;
+    font-size: 60px;
+  }
+
+  .quote-data.opacity {
+    opacity: 0.4;
   }
 </style>
 
@@ -103,15 +89,16 @@
   on:mouseenter={() => {
     toolBlockEnabled = true
   }}
-  class="window">
+  class="quote-container">
 
-  <div class="icon-quote-left" />
-  <div class="quote-text">{currentQuote}</div>
-  <div class="icon-quote-right" />
-
+  <div class:opacity={toolBlockEnabled} class="quote-data full-flex">
+    <div class="icon-quote-left full-flex" />
+    <div class="quote-text">{currentQuote}</div>
+    <div class="icon-quote-right full-flex" />
+  </div>
   {#if toolBlockEnabled}
-    <div class="quote-tool-block">
-      <div on:click={nextQuote} class="icon-arrows-ccw" />
+    <div class="quote-tool">
+      <div on:click={nextQuote} class="icon-arrows-ccw full-flex" />
     </div>
   {/if}
 </div>
