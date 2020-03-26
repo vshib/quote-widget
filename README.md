@@ -1,34 +1,23 @@
-# ST-template
+[![npm][npm]][npm-url]
 
-## Svelte.js, Typescript template
+Svelte. Item list.
 
-The default [Svelte](https://github.com/sveltejs/template) template, available for Rollup and webpack.
+## Screenshot
 
-## Getting started
+![Preview](https://raw.githubusercontent.com/vshib/quote-widget/master/assets/img/preview.png 'Preview')
 
-### Using `degit`
-
-[`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository. Use either the `rollup` or `webpack` branch in `svelte-template`:
+## Dev
 
 ```bash
-# for Rollup
-npx degit "Zimtir/ST-template" my-app
+npm install && npm run fontello && npm run dev
+open localhost:5000
 ```
 
-### Using GitHub templates
+## Widget was based on same widget at
 
-Alternatively, you can use GitHub's template feature with the [svelte-template-rollup](https://github.com/Zimtir/ST-template)
+https://tproger.ru/
 
-### Running the project
+## TODO
 
-However you get the code, you can install dependencies and run the project in development mode with:
-
-```bash
-cd my-app
-npm install # or yarn
-npm run dev
-```
-
-Open up [localhost:5000](http://localhost:5000) and start clicking around.
-
-Consult [svelte.dev](https://svelte.dev) for help getting started.
+- usage
+- tests
